@@ -40,6 +40,7 @@ _Description Here_
 * 10:45am - research connecting frontend to backend
 * 1:05pm - research scrum boards
 * 2:07pm - research data visualization options
+* 3:15pm - create layout draft in drawio
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
@@ -73,4 +74,8 @@ Research/Planning Notes:
             - Data Analytics
                 - what sorts of data analytics do I want to inlude?
     - component diagram (later)
-    - 
+    - Archive of completed tasks? After done column
+
+
+- Other Notes:
+    - Hex Codes: 9EDBD9, 8DCCE3

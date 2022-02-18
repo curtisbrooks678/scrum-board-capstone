@@ -4,7 +4,7 @@
 
 ###Name of Project: Scrum Board with Analytics
 
-Project's Purpose or Goal: (What will it do for users?)
+Project's Purpose or Goal: This application will provide users a space to keep track of their tasks and track their efficiency. 
 
 List the absolute minimum features the project requires to meet this purpose or goal:
 

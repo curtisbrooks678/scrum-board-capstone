@@ -41,6 +41,7 @@ _Description Here_
 * 1:05pm - research scrum boards
 * 2:07pm - research data visualization options
 * 3:15pm - create layout draft in drawio
+* 3:30pm - work on proposal
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
@@ -77,5 +78,18 @@ Research/Planning Notes:
     - Archive of completed tasks? After done column
 
 
+- MVP Goals:
+    - User can create tasks and track on Scrum Board to completion
+    - User can view analytics for task efficiency
+
+
+- Stretch Goals:
+    - Host on Azure (or other hosting platform).
+    - OAuth 
+    - Complex analytics for task completion using data visualization
+    - Drag and drop tasks to different columns
+
+
 - Other Notes:
     - Hex Codes: 9EDBD9, 8DCCE3
+

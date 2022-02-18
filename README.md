@@ -42,6 +42,7 @@ _Description Here_
 * 2:07pm - research data visualization options
 * 3:15pm - create layout draft in drawio
 * 3:30pm - work on proposal
+* 3:54pm - finish proposal
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

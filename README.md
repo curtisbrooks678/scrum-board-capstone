@@ -39,6 +39,7 @@ _Description Here_
 * 8:45am - compose basic elements to research/plan
 * 10:45am - research connecting frontend to backend
 * 1:05pm - research scrum boards
+* 2:07pm - research data visualization options
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

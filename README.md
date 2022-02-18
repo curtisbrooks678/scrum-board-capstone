@@ -37,6 +37,7 @@ _Description Here_
 ### Research & Planning Log
 #### Friday, 2/18/22
 * 8:45am - compose basic elements to research/plan
+* 10:45am - research connecting frontend to backend
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
@@ -60,7 +61,7 @@ Research/Planning Notes:
         - check out previous cohort's repos
     - scrum boards (make sure you have all necessary information to make one)
     - data visualization (check out Karen's C# team week project)
-        - what sorts of data analytics are possible? 
+        - what sorts of data analytics are possible?
         
 
 - Plan:

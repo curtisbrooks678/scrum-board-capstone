@@ -38,6 +38,7 @@ _Description Here_
 #### Friday, 2/18/22
 * 8:45am - compose basic elements to research/plan
 * 10:45am - research connecting frontend to backend
+* 1:05pm - research scrum boards
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

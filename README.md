@@ -36,6 +36,7 @@ _Description Here_
 
 ### Research & Planning Log
 #### Friday, 2/18/22
+* 8:45am - compose basic elements to research/plan
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
@@ -47,3 +48,26 @@ Curtis Brooks<br />
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/curtisbrooks678)
 
 Copyright (c) _2022_ _Curtis Brooks_
+
+
+-------------------
+
+
+Research/Planning Notes:
+
+- Research:
+    - connecting backend and frontEnd (C#/.NET to React)
+        - check out previous cohort's repos
+    - scrum boards (make sure you have all necessary information to make one)
+    - data visualization (check out Karen's C# team week project)
+        - what sorts of data analytics are possible? 
+        
+
+- Plan:
+    - visual representation of site
+        - two main "pages":
+            - Scrum Board
+            - Data Analytics
+                - what sorts of data analytics do I want to inlude?
+    - component diagram (later)
+    - 

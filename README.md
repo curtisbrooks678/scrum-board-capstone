@@ -43,6 +43,7 @@ _Description Here_
 * 3:15pm - create layout draft in drawio
 * 3:30pm - work on proposal
 * 3:54pm - finish proposal
+* 4:00pm - continue reseaching data visualization options
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
@@ -85,10 +86,11 @@ Research/Planning Notes:
 
 
 - Stretch Goals:
-    - Host on Azure (or other hosting platform).
-    - OAuth 
-    - Complex analytics for task completion using data visualization
-    - Drag and drop tasks to different columns
+    - Distinguish tasks and analytics base on specific users (if a manager wanted to use the app to view employee efficiency)
+    - Host on Azure or Heroku
+    - Add OAuth for login
+    - Add complex analytics for task completion using data visualization (specifics to come with more research)
+    - Drag and drop tasks to different columns, instead of buttons
 
 
 - Other Notes:

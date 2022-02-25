@@ -36,17 +36,18 @@ _Description Here_
 
 ### Research & Planning Log
 #### Friday, 2/18/22
-* 8:45am - compose basic elements to research/plan
-* 10:45am - research connecting frontend to backend
-* 1:05pm - research scrum boards
-* 2:07pm - research data visualization options
-* 3:15pm - create layout draft in drawio
-* 3:30pm - work on proposal
-* 3:54pm - finish proposal
-* 4:00pm - continue reseaching data visualization options
+* 8:45am: compose basic elements to research/plan
+* 10:45am: research connecting frontend to backend
+* 1:05pm: research scrum boards
+* 2:07pm: research data visualization options
+* 3:15pm: create layout draft in drawio
+* 3:30pm: work on proposal
+* 3:54pm: finish proposal
+* 4:00pm: continue reseaching data visualization options
 
 #### Friday, 2/25/22
-*8:05am - - get settled, plan for day's work
+*8:05am-9:16am: get settled, plan for day's work
+*9:16am- : decide to use React with Firebase (no C#/.NET), work on component diagram
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

@@ -1,23 +1,25 @@
 import React from "react";
-import Header from "./Header";
-import TaskControl from "./TaskControl";
-import Signin from "./Signin";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function App(){
-  return ( 
-    <Router>
-      <Header />
-      <Switch>
-        <Route path="/signin">
-          <Signin />
-        </Route>
-        <Route path="/">
-          <TaskControl />
-        </Route>
-      </Switch>
-    </Router>
+function TaskDetail(props){
+  const { task, onClickingDelete } = props;
+  
+  return (
+    <React.Fragment>
+      <h1>Task Detail</h1>
+      <h3>{task.location} - {task.names}</h3>
+      <p><em>{task.issue}</em></p>
+      <button onClick={ props.onClickingEdit }>Update Task</button>
+      <button onClick={()=> onClickingDelete(task.id) }>Delete Task</button>
+      <hr/>
+    </React.Fragment>
   );
 }
 
-export default App;
+TaskDetail.propTypes = {
+  task: PropTypes.object,
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func
+};
+
+export default TaskDetail;

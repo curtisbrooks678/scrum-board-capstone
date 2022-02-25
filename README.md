@@ -45,6 +45,9 @@ _Description Here_
 * 3:54pm - finish proposal
 * 4:00pm - continue reseaching data visualization options
 
+#### Friday, 2/25/22
+*8:05am - - get settled, plan for day's work
+
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 

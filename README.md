@@ -46,8 +46,10 @@ _Description Here_
 * 4:00pm: continue reseaching data visualization options
 
 #### Friday, 2/25/22
-*8:05am-9:16am: get settled, plan for day's work
-*9:16am- : decide to use React with Firebase (no C#/.NET), work on component diagram
+* 8:05am-9:16am: get settled, plan for day's work
+* 9:16am-10:15am: decide to use React with Firebase (no C#/.NET), work on component diagram
+* 10:15am- : break
+
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

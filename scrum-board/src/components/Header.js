@@ -16,7 +16,7 @@ function Header(){
   return (
     <StyledWrapper>
       <ScrumBoardHeader> 
-        Help Queue
+        Scrum Board
       </ScrumBoardHeader>
       <ul>
         <li>

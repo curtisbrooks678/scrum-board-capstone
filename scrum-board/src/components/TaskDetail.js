@@ -7,7 +7,8 @@ function TaskDetail(props){
   return (
     <React.Fragment>
       <h1>Task Detail</h1>
-      <h3>{task.location} - {task.names}</h3>
+      <h3>{task.title}</h3>
+      <p>{task.description}</p>
       <p><em>{task.issue}</em></p>
       <button onClick={ props.onClickingEdit }>Update Task</button>
       <button onClick={()=> onClickingDelete(task.id) }>Delete Task</button>

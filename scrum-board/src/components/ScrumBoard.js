@@ -17,12 +17,21 @@ function ScrumBoard(props){
     <React.Fragment>
       <hr/>
       {tasks.map((task) => {
-        return <Task
+        if (task.columnCounter === 0) {
+          return <Task
           whenTaskClicked = { props.onTaskSelection }
           title={task.title}
           description={task.description}
           id={task.id}
           key={task.id}/>
+        } else {
+          return <Task
+            whenTaskClicked = { props.onTaskSelection }
+            title={task.title}
+            description={task.description}
+            id={task.id}
+            key={task.id}/>
+        }
       })}
     </React.Fragment>
   );

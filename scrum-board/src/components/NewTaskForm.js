@@ -13,6 +13,7 @@ function NewTaskForm(props){
       {
         title: event.target.title.value,
         description: event.target.description.value,
+        columnCounter: 0
       }
     );
   }

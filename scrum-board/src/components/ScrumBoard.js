@@ -17,11 +17,16 @@ function ScrumBoard(props){
 
   const tasks = useSelector(state => state.firestore.ordered.tasks);
   
+  const sortIntoColumns = {...tasks};
+  console.log("sort array" + sortIntoColumns);
+  console.log(sortIntoColumns);
+  // sortIntoColumns.sort((a,b) => a.columnCounter - b.columnCounter ? 1 : -1);
+
   if (isLoaded(tasks)) {
   return (
     <React.Fragment>
       <hr/>
-      {tasks.map((task) => {
+      {sortIntoColumns.map((task) => {
         return <Task
             whenTaskClicked = { props.onTaskSelection }
             title={task.title}
@@ -30,6 +35,15 @@ function ScrumBoard(props){
             id={task.id}
             key={task.id}/>
       })}
+      {/* {tasks.map((task) => {
+        return <Task
+            whenTaskClicked = { props.onTaskSelection }
+            title={task.title}
+            description={task.description}
+            columnCounter={task.columnCounter}
+            id={task.id}
+            key={task.id}/>
+      })} */}
     </React.Fragment>
   );
   } else {

@@ -12,6 +12,10 @@ function ReusableForm(props) {
         <textarea
           name='description'
           placeholder='Describe your Task.' />
+        <input
+          type='text'
+          name='columnCounter'
+          placeholder='Column Counter' />
         <button type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>

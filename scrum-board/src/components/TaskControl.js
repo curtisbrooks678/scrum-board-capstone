@@ -30,7 +30,7 @@ class TaskControl extends React.Component {
     }
   }
 
-  handleAddingNewTaskToList = (newTask) => {
+  handleAddingNewTaskToList = () => {
     const { dispatch } = this.props;
     const action = a.toggleForm();
     dispatch(action);

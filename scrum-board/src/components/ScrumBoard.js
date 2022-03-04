@@ -1,6 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Task from "./Task";
+// import BackLog from "./BackLog";
+// import ToDo from "./ToDo";
+// import InProgress from "./InProgress";
+// import Review from "./Review";
+// import Done from "./Done";
 import { useSelector } from 'react-redux'
 import { useFirestoreConnect, isLoaded } from 'react-redux-firebase'
 
@@ -17,21 +22,13 @@ function ScrumBoard(props){
     <React.Fragment>
       <hr/>
       {tasks.map((task) => {
-        if (task.columnCounter === 0) {
-          return <Task
-          whenTaskClicked = { props.onTaskSelection }
-          title={task.title}
-          description={task.description}
-          id={task.id}
-          key={task.id}/>
-        } else {
-          return <Task
+        return <Task
             whenTaskClicked = { props.onTaskSelection }
             title={task.title}
             description={task.description}
+            columnCounter={task.columnCounter}
             id={task.id}
             key={task.id}/>
-        }
       })}
     </React.Fragment>
   );

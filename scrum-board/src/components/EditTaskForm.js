@@ -12,7 +12,8 @@ function EditTaskForm (props) {
     props.onEditTask();
     const propertiesToUpdate = {
       title: event.target.title.value, 
-      description: event.target.description.value
+      description: event.target.description.value,
+      columnCounter: event.target.columnCounter.value
     }
     return firestore.update({collection: 'tasks', doc: task.id }, propertiesToUpdate)
   }

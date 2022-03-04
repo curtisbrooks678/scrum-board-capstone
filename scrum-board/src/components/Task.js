@@ -7,6 +7,7 @@ function Task(props){
       <div onClick = {() => props.whenTaskClicked(props.id)}>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
+        <p>{props.columnCounter}</p>
       </div>
       <hr/>
     </React.Fragment>
@@ -16,6 +17,7 @@ function Task(props){
 Task.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
+  columnCounter: PropTypes.string,
   id: PropTypes.string,
   whenTaskClicked: PropTypes.func
 };

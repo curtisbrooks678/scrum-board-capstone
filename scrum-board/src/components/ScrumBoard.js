@@ -21,31 +21,31 @@ function ScrumBoard(props){
   columnsArr.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
   // console.log(columnsArr);
   // console.log(columnsArr[0].columnCounter);
-  function sortColumn(arr) { 
-    let columnOneArr = [];
-    let columnTwoArr = [];
-    let columnThreeArr = [];
-    let columnFourArr = [];
-    let columnFiveArr = [];
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].columnCounter === 1){
-        columnOneArr.push(321);
-      } else if (arr[i].columnCounter === 2){
-        columnTwoArr.push(arr[i]);
-      } else if (arr[i].columnCounter === 3){
-        columnThreeArr.push(arr[i]);
-      } else if (arr[i].columnCounter === 4){
-        columnFourArr.push(arr[i]);
-      } else if (arr[i].columnCounter === 5){
-        columnFiveArr.push(arr[i]);
-      } else {
-        columnOneArr.push(arr[i]);
-      }
-    }
-    return columnOneArr = [ 1, 2, 3 ]; 
-  }
+  // function sortColumn(arr) { 
+  //   let columnOneArr = [];
+  //   let columnTwoArr = [];
+  //   let columnThreeArr = [];
+  //   let columnFourArr = [];
+  //   let columnFiveArr = [];
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i].columnCounter === 1){
+  //       columnOneArr.push(321);
+  //     } else if (arr[i].columnCounter === 2){
+  //       columnTwoArr.push(arr[i]);
+  //     } else if (arr[i].columnCounter === 3){
+  //       columnThreeArr.push(arr[i]);
+  //     } else if (arr[i].columnCounter === 4){
+  //       columnFourArr.push(arr[i]);
+  //     } else if (arr[i].columnCounter === 5){
+  //       columnFiveArr.push(arr[i]);
+  //     } else {
+  //       columnOneArr.push(arr[i]);
+  //     }
+  //   }
+  //   return columnOneArr = [ 1, 2, 3 ]; 
+  // }
 
-  console.log(sortColumn(columnsArr));
+  // console.log(sortColumn(columnsArr));
 
   if (isLoaded(tasks)) {
   return (

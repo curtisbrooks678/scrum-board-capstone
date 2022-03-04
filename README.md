@@ -2,7 +2,7 @@
 
 #### By _**Curtis Brooks**_
 
-#### _One line description here_
+#### _Scrum Board app to track tasks with analytics to view effiency in completion of tasks._
 
 ## Technologies Used
 
@@ -11,12 +11,13 @@
 * _JavaScript / JSX_
 * _Bootstrap_
 * _React_
+* _Firebase_
 * _NPM_
 
 ## Component Diagram
 
 <p>
-Component Diagram Here
+<img src="scrum-board/src/img/component-diagram (1).png" height="382px">
 </p>
 
 ## Description
@@ -26,8 +27,8 @@ _Description Here_
 ## Setup/Installation Requirements
 
 * _Run `git clone https://github.com/curtisbrooks678/scrum-board-capstone` from the terminal to clone the project directory to your device._
-* _cd into the project directory then run `npm install` to set up the environment and install all the npm packages._
-* _Run `npm start` from the terminal to build the project and start a live server._
+* _cd into the project directory, then cd into the directory, scrum-board, then run `npm install` to set up the environment and install all the npm packages._
+* _Run `npm start` from the terminal in the scrum-board directory to build the project and start a live server._
 * _Navigate to `localhost:3000` in your favorite web browser to enjoy the project._
 
 ## Known Bugs

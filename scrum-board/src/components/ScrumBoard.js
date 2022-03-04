@@ -18,11 +18,12 @@ function ScrumBoard(props){
   const tasks = useSelector(state => state.firestore.ordered.tasks);
   
   const sortIntoColumns = [].concat(tasks);
+  sortIntoColumns.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
   // console.log("sort array" + sortIntoColumns);
   // console.log(sortIntoColumns);
-  const testArr = [ 3, 1, 4, 2, 5 ];
-  console.log("test array");
-  console.log(testArr.sort(function(a,b) { return a - b; }));
+  // const testArr = [ 3, 1, 4, 2, 5 ];
+  // console.log("test array");
+  // console.log(testArr.sort(function(a,b) { return a - b; }));
 
   // sortIntoColumns.sort((a,b) => a.columnCounter - b.columnCounter ? 1 : -1);
 

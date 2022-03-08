@@ -50,33 +50,49 @@ function ScrumBoard(props){
     return allColumnArr; 
   }
 
-  // console.log(sortColumn(columnsArr))
   const newArr = sortColumn(tasks);
-  console.log(newArr)
+
+  const floatContainer = {
+    border: "3px solid #fff",
+    padding: "20px"
+  };
+
+  const floatChild = {
+    width: "50%",
+    float: "left",
+    padding: "20px",
+    border: "2px solid red"
+  }
 
   if (isLoaded(tasks)) {
   return (
     <React.Fragment>
       <hr/>
-      {(newArr[0]).map((task) => {
-        return <Task
-            whenTaskClicked = { props.onTaskSelection }
-            title={task.title}
-            description={task.description}
-            columnCounter={task.columnCounter}
-            id={task.id}
-            key={task.id}/>
-      })}
-      {(newArr[1]).map((task) => {
-        return <Task
-            whenTaskClicked = { props.onTaskSelection }
-            title={task.title}
-            description={task.description}
-            columnCounter={task.columnCounter}
-            id={task.id}
-            key={task.id}/>
-      })}
-      {(newArr[2]).map((task) => {
+      <div className = {floatContainer}>
+        <div className = {floatChild}>
+          {(newArr[0]).map((task) => {
+            return <Task
+                whenTaskClicked = { props.onTaskSelection }
+                title={task.title}
+                description={task.description}
+                columnCounter={task.columnCounter}
+                id={task.id}
+                key={task.id}/>
+          })}
+        </div>
+        <div class = {floatChild}>
+          {(newArr[1]).map((task) => {
+            return <Task
+                whenTaskClicked = { props.onTaskSelection }
+                title={task.title}
+                description={task.description}
+                columnCounter={task.columnCounter}
+                id={task.id}
+                key={task.id}/>
+          })}
+        </div>
+      </div>
+      {/* {(newArr[2]).map((task) => {
         return <Task
             whenTaskClicked = { props.onTaskSelection }
             title={task.title}
@@ -102,7 +118,7 @@ function ScrumBoard(props){
             columnCounter={task.columnCounter}
             id={task.id}
             key={task.id}/>
-      })}
+      })} */}
       {/* {tasks.map((task) => {
         return <Task
             whenTaskClicked = { props.onTaskSelection }

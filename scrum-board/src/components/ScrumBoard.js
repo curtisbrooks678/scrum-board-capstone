@@ -22,12 +22,14 @@ function ScrumBoard(props){
   // tasks.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
   // console.log(columnsArr);
   // console.log(columnsArr[0].columnCounter);
+
   function sortColumn(inputArr) { 
     let columnOneArr = [];
     let columnTwoArr = [];
     let columnThreeArr = [];
     let columnFourArr = [];
     let columnFiveArr = [];
+    let allColumnArr = [];
     for (let i = 0; i < inputArr.length; i++) {
       if (inputArr[i].columnCounter === "1"){
         columnOneArr.push(inputArr[i]);
@@ -44,7 +46,8 @@ function ScrumBoard(props){
         console.log("here" + inputArr[i].columnCounter);
       }
     }
-    return columnOneArr; 
+    allColumnArr = [ columnOneArr, columnTwoArr, columnThreeArr, columnFourArr, columnFiveArr ];
+    return allColumnArr; 
   }
 
   // console.log(sortColumn(columnsArr))
@@ -55,7 +58,43 @@ function ScrumBoard(props){
   return (
     <React.Fragment>
       <hr/>
-      {newArr.map((task) => {
+      {(newArr[0]).map((task) => {
+        return <Task
+            whenTaskClicked = { props.onTaskSelection }
+            title={task.title}
+            description={task.description}
+            columnCounter={task.columnCounter}
+            id={task.id}
+            key={task.id}/>
+      })}
+      {(newArr[1]).map((task) => {
+        return <Task
+            whenTaskClicked = { props.onTaskSelection }
+            title={task.title}
+            description={task.description}
+            columnCounter={task.columnCounter}
+            id={task.id}
+            key={task.id}/>
+      })}
+      {(newArr[2]).map((task) => {
+        return <Task
+            whenTaskClicked = { props.onTaskSelection }
+            title={task.title}
+            description={task.description}
+            columnCounter={task.columnCounter}
+            id={task.id}
+            key={task.id}/>
+      })}
+      {(newArr[3]).map((task) => {
+        return <Task
+            whenTaskClicked = { props.onTaskSelection }
+            title={task.title}
+            description={task.description}
+            columnCounter={task.columnCounter}
+            id={task.id}
+            key={task.id}/>
+      })}
+      {(newArr[4]).map((task) => {
         return <Task
             whenTaskClicked = { props.onTaskSelection }
             title={task.title}

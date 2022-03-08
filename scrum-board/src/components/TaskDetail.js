@@ -12,7 +12,6 @@ function TaskDetail(props){
       <p>{task.columnCounter}</p>
       <button onClick={ props.onClickingEdit }>Update Task</button>
       <button onClick={()=> onClickingDelete(task.id) }>Delete Task</button>
-      <hr/>
     </React.Fragment>
   );
 }

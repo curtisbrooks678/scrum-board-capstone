@@ -57,19 +57,24 @@ function ScrumBoard(props){
     padding: "20px"
   };
 
-  const floatChild = {
+  const floatChild1 = {
     width: "50%",
     float: "left",
     padding: "20px",
-    border: "2px solid red"
+  }
+
+  const floatChild2 = {
+    width: "50%",
+    float: "left",
+    padding: "20px",
   }
 
   if (isLoaded(tasks)) {
   return (
     <React.Fragment>
       <hr/>
-      <div className = {floatContainer}>
-        <div className = {floatChild}>
+      <div style = {floatContainer}>
+        <div style = {floatChild1}>
           {(newArr[0]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -80,8 +85,41 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div class = {floatChild}>
+        <div style = {floatChild2}>
           {(newArr[1]).map((task) => {
+            return <Task
+                whenTaskClicked = { props.onTaskSelection }
+                title={task.title}
+                description={task.description}
+                columnCounter={task.columnCounter}
+                id={task.id}
+                key={task.id}/>
+          })}
+        </div>
+        <div style = {floatChild1}>
+          {(newArr[2]).map((task) => {
+            return <Task
+                whenTaskClicked = { props.onTaskSelection }
+                title={task.title}
+                description={task.description}
+                columnCounter={task.columnCounter}
+                id={task.id}
+                key={task.id}/>
+          })}
+        </div>
+        <div style = {floatChild1}>
+          {(newArr[3]).map((task) => {
+            return <Task
+                whenTaskClicked = { props.onTaskSelection }
+                title={task.title}
+                description={task.description}
+                columnCounter={task.columnCounter}
+                id={task.id}
+                key={task.id}/>
+          })}
+        </div>
+        <div style = {floatChild1}>
+          {(newArr[4]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
                 title={task.title}

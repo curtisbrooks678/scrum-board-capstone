@@ -9,7 +9,6 @@ function Task(props){
         <p>{props.description}</p>
         <p>{props.columnCounter}</p>
       </div>
-      <hr/>
     </React.Fragment>
   );
 }

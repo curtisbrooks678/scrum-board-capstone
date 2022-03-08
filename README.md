@@ -52,6 +52,9 @@ _Description Here_
 * 10:15am-10:50am: break
 * 10:50am- :start building application
 
+#### Tuesday, 3/8/22
+* 7:30am - : watch react youtube videos for research
+
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

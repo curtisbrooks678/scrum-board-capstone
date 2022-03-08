@@ -53,7 +53,7 @@ _Description Here_
 * 10:50am- :start building application
 
 #### Tuesday, 3/8/22
-* 7:30am - : watch react youtube videos for research
+* 7:30am - 8:30am: watch react youtube videos for research
 
 
 

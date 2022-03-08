@@ -17,37 +17,39 @@ function ScrumBoard(props){
 
   const tasks = useSelector(state => state.firestore.ordered.tasks);
   
-  const columnsArr = [].concat(tasks);
-  columnsArr.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
-  console.log(columnsArr);
-  console.log(columnsArr[0].columnCounter);
-  function sortColumn(arr) { 
+  // console.log(tasks);
+  // const columnsArr = [].concat(tasks);
+  // tasks.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
+  // console.log(columnsArr);
+  // console.log(columnsArr[0].columnCounter);
+  function sortColumn(inputArr) { 
     let columnOneArr = [];
     let columnTwoArr = [];
     let columnThreeArr = [];
     let columnFourArr = [];
     let columnFiveArr = [];
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].columnCounter === 1){
-        columnOneArr.push("Zero!");
-      } else if (arr[i].columnCounter === 2){
-        columnTwoArr.push(arr[i]);
-      } else if (arr[i].columnCounter === 3){
-        columnThreeArr.push(arr[i]);
-      } else if (arr[i].columnCounter === 4){
-        columnFourArr.push(arr[i]);
-      } else if (arr[i].columnCounter === 5){
-        columnFiveArr.push(arr[i]);
+    for (let i = 0; i < inputArr.length; i++) {
+      if (inputArr[i].columnCounter === "1"){
+        columnOneArr.push(inputArr[i]);
+      } else if (inputArr[i].columnCounter === "2"){
+        columnTwoArr.push(inputArr[i]);
+      } else if (inputArr[i].columnCounter === "3"){
+        columnThreeArr.push(inputArr[i]);
+      } else if (inputArr[i].columnCounter === "4"){
+        columnFourArr.push(inputArr[i]);
+      } else if (inputArr[i].columnCounter === "5"){
+        columnFiveArr.push(inputArr[i]);
       } else {
-        columnOneArr.push(arr[i]);
+        columnOneArr.push(inputArr[i]);
+        console.log("here" + inputArr[i].columnCounter);
       }
     }
     return columnOneArr; 
   }
 
-  console.log()
-  const newArr = sortColumn(columnsArr);
-  console.log(newArr);
+  // console.log(sortColumn(columnsArr))
+  const newArr = sortColumn(tasks);
+  console.log(newArr)
 
   if (isLoaded(tasks)) {
   return (

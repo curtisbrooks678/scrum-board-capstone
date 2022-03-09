@@ -61,12 +61,7 @@ function ScrumBoard(props){
     width: "50%",
     float: "left",
     padding: "20px",
-  }
-
-  const floatChild2 = {
-    width: "50%",
-    float: "left",
-    padding: "20px",
+    border: "1px solid black"
   }
 
   if (isLoaded(tasks)) {
@@ -76,6 +71,7 @@ function ScrumBoard(props){
       <div style = {floatContainer}>
         <div style = {floatChild1}>
           <h3>BackLog</h3>
+          <hr/>
           {(newArr[0]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -86,8 +82,9 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style = {floatChild2}>
+        <div style = {floatChild1}>
         <h3>ToDo</h3>
+        <hr/>
           {(newArr[1]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -100,6 +97,7 @@ function ScrumBoard(props){
         </div>
         <div style = {floatChild1}>
         <h3>InProgress</h3>
+        <hr/>
           {(newArr[2]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -112,6 +110,7 @@ function ScrumBoard(props){
         </div>
         <div style = {floatChild1}>
         <h3>Review</h3>
+        <hr/>
           {(newArr[3]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -124,6 +123,7 @@ function ScrumBoard(props){
         </div>
         <div style = {floatChild1}>
         <h3>Done</h3>
+        <hr/>
           {(newArr[4]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }

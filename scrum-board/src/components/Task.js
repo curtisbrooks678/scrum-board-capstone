@@ -16,7 +16,7 @@ function Task(props){
 Task.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  columnCounter: PropTypes.string,
+  columnCounter: PropTypes.number,
   id: PropTypes.string,
   whenTaskClicked: PropTypes.func
 };

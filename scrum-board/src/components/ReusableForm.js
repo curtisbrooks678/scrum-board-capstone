@@ -13,7 +13,9 @@ function ReusableForm(props) {
           name='description'
           placeholder='Describe your Task.' />
         <input
-          type='text'
+          type='number'
+          min='1'
+          max='5'
           name='columnCounter'
           placeholder='Column Counter' />
         <button type='submit'>{props.buttonText}</button>

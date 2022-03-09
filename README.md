@@ -107,3 +107,11 @@ Research/Planning Notes:
 - Other Notes:
     - Hex Codes: 9EDBD9, 8DCCE3
 
+
+
+
+ToDo Wed 2/9/22:
+- add titles to "columns"
+- add buttons to increase/decrease columnCounter (call "left" and "right" for now)
+- add timeStamp details? how does this work?
+

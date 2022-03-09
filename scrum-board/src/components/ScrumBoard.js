@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Task from "./Task";
 // import BackLog from "./BackLog";
 // import ToDo from "./ToDo";
@@ -8,6 +7,7 @@ import Task from "./Task";
 // import Done from "./Done";
 import { useSelector } from 'react-redux'
 import { useFirestoreConnect, isLoaded } from 'react-redux-firebase'
+import PropTypes from "prop-types";
 
 function ScrumBoard(props){
   
@@ -17,11 +17,11 @@ function ScrumBoard(props){
 
   const tasks = useSelector(state => state.firestore.ordered.tasks);
   
-  console.log(tasks);
+  // // console.log(tasks);
   // const columnsArr = [].concat(tasks);
-  // tasks.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
+  // // columnsArr.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
   // console.log(columnsArr);
-  // console.log(columnsArr[0].columnCounter);
+  // // console.log(columnsArr[0].columnCounter);
 
   function sortColumn(inputArr) { 
     let columnOneArr = [];
@@ -75,6 +75,7 @@ function ScrumBoard(props){
       <hr/>
       <div style = {floatContainer}>
         <div style = {floatChild1}>
+          <h3>BackLog</h3>
           {(newArr[0]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -86,6 +87,7 @@ function ScrumBoard(props){
           })}
         </div>
         <div style = {floatChild2}>
+        <h3>ToDo</h3>
           {(newArr[1]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -97,6 +99,7 @@ function ScrumBoard(props){
           })}
         </div>
         <div style = {floatChild1}>
+        <h3>InProgress</h3>
           {(newArr[2]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -108,6 +111,7 @@ function ScrumBoard(props){
           })}
         </div>
         <div style = {floatChild1}>
+        <h3>Review</h3>
           {(newArr[3]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -119,6 +123,7 @@ function ScrumBoard(props){
           })}
         </div>
         <div style = {floatChild1}>
+        <h3>Done</h3>
           {(newArr[4]).map((task) => {
             return <Task
                 whenTaskClicked = { props.onTaskSelection }
@@ -130,42 +135,6 @@ function ScrumBoard(props){
           })}
         </div>
       </div>
-      {/* {(newArr[2]).map((task) => {
-        return <Task
-            whenTaskClicked = { props.onTaskSelection }
-            title={task.title}
-            description={task.description}
-            columnCounter={task.columnCounter}
-            id={task.id}
-            key={task.id}/>
-      })}
-      {(newArr[3]).map((task) => {
-        return <Task
-            whenTaskClicked = { props.onTaskSelection }
-            title={task.title}
-            description={task.description}
-            columnCounter={task.columnCounter}
-            id={task.id}
-            key={task.id}/>
-      })}
-      {(newArr[4]).map((task) => {
-        return <Task
-            whenTaskClicked = { props.onTaskSelection }
-            title={task.title}
-            description={task.description}
-            columnCounter={task.columnCounter}
-            id={task.id}
-            key={task.id}/>
-      })} */}
-      {/* {tasks.map((task) => {
-        return <Task
-            whenTaskClicked = { props.onTaskSelection }
-            title={task.title}
-            description={task.description}
-            columnCounter={task.columnCounter}
-            id={task.id}
-            key={task.id}/>
-      })} */}
     </React.Fragment>
   );
   } else {

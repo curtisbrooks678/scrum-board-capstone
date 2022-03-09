@@ -17,7 +17,7 @@ function ScrumBoard(props){
 
   const tasks = useSelector(state => state.firestore.ordered.tasks);
   
-  // console.log(tasks);
+  console.log(tasks);
   // const columnsArr = [].concat(tasks);
   // tasks.sort(function(a,b) { return a.columnCounter - b.columnCounter; });
   // console.log(columnsArr);

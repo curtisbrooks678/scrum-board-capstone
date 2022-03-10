@@ -60,7 +60,8 @@ _Description Here_
 * 6:00pm-8:00pm :continue research on react app structure
 
 #### Wednesday, 3/10/22
-* 8:00am- : continue research on react/create plan for app after presentation
+* 8:00am-10:00am: continue research on react/create plan for app after presentation
+* 10:00am- :continue research on react/create plan for app after presentation
 
 
 

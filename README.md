@@ -61,7 +61,7 @@ _Description Here_
 
 #### Wednesday, 3/10/22
 * 8:00am-10:00am: continue research on react/create plan for app after presentation
-* 10:00am- :continue research on react/create plan for app after presentation
+* 10:00am-12:20pm :continue research on react/create plan for app after presentation
 
 
 

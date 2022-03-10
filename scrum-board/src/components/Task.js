@@ -3,14 +3,6 @@ import PropTypes from "prop-types";
 
 function Task(props){
 
-  function columnButtonLeft() {
-    
-  }
-  
-  function columnButtonRight() {
-    
-  }
-
   return (
     <React.Fragment>
       <div onClick = {() => props.whenTaskClicked(props.id)}>
@@ -18,8 +10,6 @@ function Task(props){
         <p>{props.description}</p>
         <p>{props.columnCounter}</p>
       </div>
-      <button onClick={columnButtonRight()}>Left</button>
-      <button onClick={columnButtonLeft()}>Right</button>
     </React.Fragment>
   );
 }

@@ -55,6 +55,9 @@ _Description Here_
 #### Tuesday, 3/8/22
 * 7:30am - 8:30am: watch react youtube videos for research
 
+#### Wednesday, 3/9/22
+* 5:00pm - : watch react youtube videos for research
+
 
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

@@ -57,7 +57,7 @@ _Description Here_
 
 #### Wednesday, 3/9/22
 * 5:00pm-6:00pm: watch react youtube videos for research
-* 6:00pm- :continue research on react apps
+* 6:00pm- :continue research on react app structure
 
 
 

@@ -1,8 +1,8 @@
-# _Scrum Board with Analytics_
+# _WIP Scrum Board with Analytics_
 
 #### By _**Curtis Brooks**_
 
-#### _Scrum Board app to track tasks with analytics to view effiency in completion of tasks._
+#### _Scrum Board app to track tasks with analytics to view effiency in completion of tasks. Not functional yet. Stay tuned!_
 
 ## Technologies Used
 

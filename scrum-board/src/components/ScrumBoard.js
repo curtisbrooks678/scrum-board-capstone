@@ -46,24 +46,31 @@ function ScrumBoard(props){
 
   const newArr = sortColumn(tasks);
 
-  const floatContainer = {
-    border: "3px solid #fff",
-    padding: "20px"
-  };
+  // const floatContainer = {
+  //   border: "3px solid #fff",
+  //   padding: "20px"
+  // };
 
-  const floatChild1 = {
-    width: "50%",
-    float: "left",
-    padding: "20px",
-    border: "1px solid black"
-  }
+  // const floatChild1 = {
+  //   width: "50%",
+  //   float: "left",
+  //   padding: "20px",
+  //   border: "1px solid black"
+  // }
+
+  // const floatChild2 = {
+  //   width: "50%",
+  //   float: "left",
+  //   padding: "20px",
+  //   border: "1px solid black"
+  // }
 
   if (isLoaded(tasks)) {
   return (
     <React.Fragment>
       <hr/>
-      <div style = {floatContainer}>
-        <div style = {floatChild1}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gridGap: 20 }}>
+        <div>
           <h3>BackLog</h3>
           <hr/>
           {(newArr[0]).map((task) => {
@@ -76,7 +83,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style = {floatChild1}>
+        <div>
         <h3>ToDo</h3>
         <hr/>
           {(newArr[1]).map((task) => {
@@ -89,7 +96,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style = {floatChild1}>
+        <div>
         <h3>InProgress</h3>
         <hr/>
           {(newArr[2]).map((task) => {
@@ -102,7 +109,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style = {floatChild1}>
+        <div>
         <h3>Review</h3>
         <hr/>
           {(newArr[3]).map((task) => {
@@ -115,7 +122,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style = {floatChild1}>
+        <div>
         <h3>Done</h3>
         <hr/>
           {(newArr[4]).map((task) => {

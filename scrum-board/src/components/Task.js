@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ColumnButtons from "./ColumnButtons";
 
 function Task(props){
 
@@ -11,10 +12,13 @@ function Task(props){
 
   return (
     <React.Fragment>
-      <div onClick = {() => props.whenTaskClicked(props.id)} style={taskStyle}>
-        <h3>{props.title}</h3>
-        <p>{props.description}</p>
-        <p>{props.columnCounter}</p>
+      <div className="p-2 bd-highlight" style={taskStyle}>
+        <div onClick = {() => props.whenTaskClicked(props.id)}>
+          <h3>{props.title}</h3>
+          <p>{props.description}</p>
+          <p>{props.columnCounter}</p>
+        </div>
+        <ColumnButtons />
       </div>
     </React.Fragment>
   );

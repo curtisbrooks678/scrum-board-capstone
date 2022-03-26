@@ -65,8 +65,8 @@ function ScrumBoard(props){
   return (
     <React.Fragment>
       <hr/>
-      <div style={floatContainer}>
-        <div style={floatChild}>
+      <div className="d-flex flex-row bd-highlight mb-3" style={floatContainer}>
+        <div className="p-2 bd-highlight" style={floatChild}>
           <h3>BackLog</h3>
           <hr/>
           {(newArr[0]).map((task) => {
@@ -79,7 +79,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style={floatChild}>
+        <div className="p-2 bd-highlight" style={floatChild}>
         <h3>ToDo</h3>
         <hr/>
           {(newArr[1]).map((task) => {
@@ -92,7 +92,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style={floatChild}>
+        <div className="p-2 bd-highlight" style={floatChild}>
         <h3>InProgress</h3>
         <hr/>
           {(newArr[2]).map((task) => {
@@ -105,7 +105,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style={floatChild}>
+        <div className="p-2 bd-highlight" style={floatChild}>
         <h3>Review</h3>
         <hr/>
           {(newArr[3]).map((task) => {
@@ -118,7 +118,7 @@ function ScrumBoard(props){
                 key={task.id}/>
           })}
         </div>
-        <div style={floatChild}>
+        <div className="p-2 bd-highlight" style={floatChild}>
         <h3>Done</h3>
         <hr/>
           {(newArr[4]).map((task) => {
